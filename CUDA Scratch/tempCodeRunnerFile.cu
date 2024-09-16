@@ -1,0 +1,1 @@
+float *d_z1 = d_out_1;
