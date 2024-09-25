@@ -15,6 +15,8 @@
         }                                                                 \
     } while (0)
 
+// This file simulates distributing computation across separate devices with streams. I only have one GPU to test on so I'm not able to make use of the setDevice function.
+
 __global__ void float_to_b16(int n, float* f_arr, float* b_arr) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     if (idx < n) {
